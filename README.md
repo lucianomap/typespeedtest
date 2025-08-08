@@ -2,7 +2,7 @@
 
 This is an interactive typing speed test application built with **HTML5**, **CSS3**, and **JavaScript**. It features real-time WPM and accuracy calculation, difficulty levels, error highlighting, a virtual keyboard, performance history, custom test creation, multi-language support, and a competition mode with a leaderboard.
 
-![Typing Speed Test Screenshot](<img width="769" height="905" alt="1" src="https://github.com/user-attachments/assets/a032c763-7bd1-4aa6-857c-9446b0f19e57" />)
+<img width="769" height="905" alt="1" src="https://github.com/user-attachments/assets/a032c763-7bd1-4aa6-857c-9446b0f19e57" />
 
 
 ---
