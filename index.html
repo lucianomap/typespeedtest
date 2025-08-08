@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Typing Speed Test</h1>
+        <div class="text-center my-4">
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-secondary" id="difficulty-easy">Easy</button>
+                <button type="button" class="btn btn-secondary" id="difficulty-medium">Medium</button>
+                <button type="button" class="btn btn-secondary" id="difficulty-hard">Hard</button>
+            </div>
+            <div class="form-group mt-3">
+                <label for="language-select">Language:</label>
+                <select class="form-control" id="language-select">
+                    <option value="en">🇬🇧 English</option>
+                    <option value="es">🇪🇸 Spanish</option>
+                    <option value="de">🇩🇪 German</option>
+                    <option value="pt">🇧🇷 Portuguese</option>
+                </select>
+            </div>
+        </div>
+        <div id="text-to-type" class="text-justify p-3 border rounded"></div>
+        <textarea id="text-input" class="form-control mt-3" rows="5" placeholder="Start typing here..."></textarea>
+        <div class="row mt-3">
+            <div class="col">
+                <h5>WPM: <span id="wpm">0</span></h5>
+            </div>
+            <div class="col">
+                <h5>Accuracy: <span id="accuracy">100</span>%</h5>
+            </div>
+            <div class="col">
+                <h5>Time: <span id="time">0</span>s</h5>
+            </div>
+        </div>
+        <div id="virtual-keyboard" class="mt-4"></div>
+        <div class="mt-5">
+            <h3 class="text-center">Performance History</h3>
+            <canvas id="performance-chart"></canvas>
+        </div>
+        <div class="mt-5">
+            <h3 class="text-center">Custom Test</h3>
+            <textarea id="custom-text" class="form-control" rows="5" placeholder="Paste your own text here..."></textarea>
+            <button id="start-custom-test" class="btn btn-primary mt-2">Start Custom Test</button>
+        </div>
+
+        <div class="mt-5">
+            <h3 class="text-center">Leaderboard</h3>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Name</th>
+                        <th>WPM</th>
+                        <th>Accuracy</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboard-body"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
